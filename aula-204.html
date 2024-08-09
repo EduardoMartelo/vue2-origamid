@@ -9,7 +9,9 @@
 </head>
 <body>
   <div id="app">
-    
+    <a :href="link">Link teste</a>
+    <p :class="cor" class="ativo">Texto</p>
+    <p :class="comrprou ? 'verde' : 'vermelho'">O cliente comprou?</p>
   </div>
   
   <script>
@@ -17,7 +19,9 @@
     const vm = new Vue ({
       el: "#app",
       data: {
-       
+       link: "https://martelo.dev.br",
+       cor: '',
+       comrprou: true,
       }
     })
 
